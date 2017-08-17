@@ -1,0 +1,15 @@
+#quiz{
+	color: firebrick;
+	margin: auto;
+    width: 50%;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+#header{
+	text-align: center;
+}
+
+#timer{
+	text-align: center;
+}

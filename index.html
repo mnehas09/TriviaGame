@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body background="assets/images/gaming-pattern.png">
+    <form id="quiz" name="quiz">
+        <h1 id="header">Trivia Time!</h1>
+        <input id="button" type="button" value="Start" onclick="time();">
+        <input type="text" id="txt" />
+        <input id="button" type="button" value="Stop" onclick="stopMe();">
+        <p class="question">1. Who won the first ever College Football Playoff Championship?</p>
+        <ul class="answers">
+            <input type="radio" name="q1" value="a" id="q1a">
+            <label for="q1a">Ohio State</label>
+            <br/>
+            <input type="radio" name="q1" value="b" id="q1b">
+            <label for="q1b">Alabama</label>
+            <br/>
+            <input type="radio" name="q1" value="c" id="q1c">
+            <label for="q1c">Clemson</label>
+            <br/>
+            <input type="radio" name="q1" value="d" id="q1d">
+            <label for="q1d">Florida State</label>
+            <br/>
+        </ul>
+        <p class="question">2. Who did Ohio State beat in the 2002 season to win the College Football Championship?</p>
+        <ul class="answers">
+            <input type="radio" name="q2" value="a" id="q2a">
+            <label for="q2a">Florida</label>
+            <br/>
+            <input type="radio" name="q2" value="b" id="q2b">
+            <label for="q2b">LSU</label>
+            <br/>
+            <input type="radio" name="q2" value="c" id="q2c">
+            <label for="q2c">Miami</label>
+            <br/>
+            <input type="radio" name="q2" value="d" id="q2d">
+            <label for="q2d">Michigan</label>
+            <br/>
+        </ul>
+        <p class="question">3. Who was the last Ohio State player to win the Heisman Trophy?</p>
+        <ul class="answers">
+            <input type="radio" name="q3" value="a" id="q3a">
+            <label for="q3a">Braxton Miller</label>
+            <br/>
+            <input type="radio" name="q3" value="b" id="q3b">
+            <label for="q3b">Ezekiel Elliot</label>
+            <br/>
+            <input type="radio" name="q3" value="c" id="q3c">
+            <label for="q3c">Troy Smith</label>
+            <br/>
+            <input type="radio" name="q3" value="d" id="q3d">
+            <label for="q3d">Ted Ginn Jr.</label>
+            <br/>
+        </ul>
+        <input id="button" type="button" value="Submit" onclick="check();">
+        <p id="correct-answers"></p>
+        <p id="wrong-answers"></p>
+    </form>
+</body>
+
+</html>
